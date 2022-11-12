@@ -1,0 +1,305 @@
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo_container {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.nav_option ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+
+}
+
+button {
+    padding: 10px 15px;
+    color: white;
+    border: none;
+}
+
+/* hero section  */
+
+.hero_section {
+    background-image: url("images/hero_image.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_section .container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.hero_section h1 {
+    font-size: 4rem;
+}
+
+.hero_section h3 {
+    font-size: 2rem;
+}
+
+/* music section.. */
+.music_section {
+    background-color: var(--purple500);
+    padding-top: 50px;
+    color: white;
+}
+
+.music_section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.ipad_iphone_img {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.primary_btn {
+    background-color: var(--red600);
+    transition: 0.2s ease-in;
+
+}
+
+.primary_btn:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in;
+}
+
+/* about music section */
+.secondary_btn {
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.secondary_btn:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in;
+}
+
+.about_music .container {
+    padding-top: 500px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+
+}
+
+.about_music .secondary_btn {
+    background-color: var(--purple300);
+}
+
+/* vedio section */
+.video_section {
+    background-image: url("images/video.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.video_section .container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* text ko upar shift akrne ke liye */
+    margin-top: -200px;
+}
+
+/* gift section   */
+.gift_section {
+    display: flex;
+    margin: 100px auto;
+    gap: 50px;
+}
+
+.gift_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.gift_content .secondary_btn {
+    align-self: flex-start;
+    background-color: var(--purple300);
+}
+
+/* footer section  */
+footer {
+    background-color: var(--purple600);
+}
+
+.footer_upper .container {
+    display: flex;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer_links h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer_links ul li {
+    font-size: 14px;
+    color: lightgrey
+}
+
+.footer_lower {
+    background-color: var(--purple300);
+    height: 60px;
+    display: flex;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.ipad_iphone_img img,
+.macbook_img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:786px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .hero_section h1 {
+        font-size: 32px;
+    }
+
+    .hero_section h3 {
+        font-size: 24px;
+    }
+
+    .music_section .ipad_iphone_img {
+        top: auto;
+        margin: auto;
+    }
+
+    .about_music .container {
+        padding-top: 20px;
+    }
+
+    .gift_section {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .gift_content .secondary_btn {
+        align-self: center;
+    }
+
+    .gift_section img {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+
+    }
+
+    .footer_links h4 {
+        align-self: center;
+    }
+
+    .footer_lower {
+        place-content: center;
+    }
+
+}
