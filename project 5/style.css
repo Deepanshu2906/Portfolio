@@ -17,7 +17,7 @@ nav {
     margin-bottom: 32px;
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     padding: 10px;
-    z-index: 20;
+    z-index: 999;
 }
 
 .navigation {
@@ -85,38 +85,6 @@ button:hover {
     align-self: flex-start;
     color: white;
 
-}
-
-@media (max-width:786px) {
-
-    .bar-icon i {
-        font-size: 24px;
-    }
-
-    .hero {
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .hero_image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .hero_image img {
-        width: 90%;
-
-    }
-
-    .hero_content {
-        gap: 10px;
-        padding: 0 10px;
-    }
-
-    .hero_content h1 {
-        font-size: 32px;
-    }
 }
 
 .features {
@@ -217,30 +185,6 @@ button:hover {
     grid-area: I7;
 }
 
-@media (max-width:786px) {
-    .features {
-        flex-direction: column;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    .feature {
-        flex-direction: column;
-    }
-
-    .menu {
-        gap: 20px;
-    }
-
-    .food_menu {
-        padding: 10px;
-    }
-
-    .food_image img {
-        border-radius: 0px;
-    }
-}
-
 /* footer section */
 footer {
     background-color: antiquewhite
@@ -279,4 +223,72 @@ ul li {
     list-style-type: none;
     font-size: 14px;
     margin-bottom: 10px;
+}
+
+@media (max-width:786px) {
+    .navigation {
+        padding: 10px;
+    }
+
+    .bar-icon i {
+        font-size: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        place-items: center;
+
+    }
+
+    .hero_image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_image img {
+        width: 90%;
+
+    }
+
+    .hero_content {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .hero_content h1 {
+        font-size: 32px;
+    }
+}
+
+/* Media Query .. */
+@media (max-width:786px) {
+    .features {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .food_menu {
+        padding: 10px;
+    }
+
+    .food_image img {
+        border-radius: 0px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .news_letter input {
+        align-self: flex-start;
+    }
 }
