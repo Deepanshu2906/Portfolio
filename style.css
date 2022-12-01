@@ -160,6 +160,7 @@ nav li:hover {
 /* Project section   */
 #project {
     background-color: var(--darker-color);
+    padding-bottom: 20px;
 }
 
 #project h2 {
