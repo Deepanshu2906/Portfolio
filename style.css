@@ -29,6 +29,8 @@ html {
 
 body {
     font-size: 1.4rem;
+    max-height:100vh;
+    overflow: scroll;
 }
 
 .container {
