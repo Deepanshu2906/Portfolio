@@ -288,7 +288,7 @@ nav li:hover {
 footer {
     background-color: var(--darker-color);
     padding: 3rem;
-    text-align: center;
+    text-align: center;   
 }
 
 /* Media query... */
