@@ -302,6 +302,12 @@ footer {
 
     #hero .container {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    #hero .container .hero_image img {
+        width: 250px;
+        height: 300px;
     }
 
     .contact .container {
