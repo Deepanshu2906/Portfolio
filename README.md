@@ -5,4 +5,4 @@ Project 3 - Parallax Wesbite
 Project 4 - Landing Page
 Project 5 - Restaurant Website
 Project 6 - Music Website
-Project 6 - Blog Website
+Project 7 - Blog Website
