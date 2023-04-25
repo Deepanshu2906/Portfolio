@@ -12,7 +12,9 @@ body {
 
 nav {
     position: sticky;
+    /* position :fixed; */
     top: 0;
+    /* width: 100%; */
     background-color: white;
     margin-bottom: 32px;
     box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
@@ -136,7 +138,7 @@ button:hover {
 
 .food_menu {
     display: grid;
-    /* grid-template-rows: repeat(auto-fit, minmax(300, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(4, 1fr); */
     grid-template-areas:
         "I1 I1 I2 I3"

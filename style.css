@@ -13,7 +13,9 @@
   box-sizing: border-box;
 }
 
-/* 1 rem =16px    */
+/* 1 rem =16px  = 100%
+ to make 1rem = 10px
+*/
 html {
   font-size: 62.5%;
 }
@@ -41,6 +43,7 @@ body {
 header {
   background-color: var(--lighting-color);
   position: sticky;
+  /* position: fixed; */
   top: 0;
   z-index: 999;
 }
@@ -53,9 +56,12 @@ nav {
 }
 
 nav ul {
+  text-decoration: none;
   list-style: none;
   display: flex;
   gap: 3rem;
+  color: #fefefe;
+  font-weight: 500;
 }
 
 a {
@@ -94,9 +100,10 @@ nav li:hover {
 }
 
 #hero .container .hero_image img {
-  width: 380px;
+  width: 350px;
   height: 400px;
-  border-radius: 50px;
+  object-fit: cover;
+  border-radius: 100px;
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.154);
 }
 
@@ -142,7 +149,7 @@ nav li:hover {
   }
 
   to {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -194,7 +201,7 @@ nav li:hover {
 .card:hover img {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   cursor: pointer;
 }
 
@@ -287,6 +294,7 @@ footer {
   background-color: var(--darker-color);
   padding: 3rem;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 /* Media query... */
@@ -305,7 +313,7 @@ footer {
     height: 300px;
   }
 
-  .contact .container {
+  #contact > .container {
     height: 70vh;
   }
 }
@@ -320,7 +328,7 @@ footer {
     padding: 0 6rem;
   }
 
-  .contact .container {
+  #contact > .container {
     height: 50vh;
   }
 }
